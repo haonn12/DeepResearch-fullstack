@@ -13,9 +13,12 @@
     "@langchain/core": "^0.3.55",
     "@langchain/langgraph-sdk": "^0.0.74",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "@radix-ui/react-checkbox": "^1.1.1",
 =======
 >>>>>>> 402cf6d6338a7494de78bf81d7428bf9e7f09611
+=======
+>>>>>>> 8083b3d4cfc2aa893afff703d2400dd84278e214
     "@radix-ui/react-scroll-area": "^1.2.8",
     "@radix-ui/react-select": "^2.2.4",
     "@radix-ui/react-slot": "^1.2.2",

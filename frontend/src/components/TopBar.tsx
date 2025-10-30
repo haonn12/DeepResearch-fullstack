@@ -1,14 +1,19 @@
 import React from 'react';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { MessageSquare, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 =======
 import { MessageSquare } from 'lucide-react';
 >>>>>>> 402cf6d6338a7494de78bf81d7428bf9e7f09611
+=======
+import { MessageSquare } from 'lucide-react';
+>>>>>>> 8083b3d4cfc2aa893afff703d2400dd84278e214
 
 interface TopBarProps {
   conversationTitle?: string;
   isLoading?: boolean;
+<<<<<<< HEAD
 <<<<<<< HEAD
   onExportReport?: () => void;
   canExport?: boolean;
@@ -23,12 +28,17 @@ export const TopBar: React.FC<TopBarProps> = ({
   return (
     <div className="h-16 bg-white border-b border-gray-200 flex items-center justify-between px-6">
 =======
+=======
+>>>>>>> 8083b3d4cfc2aa893afff703d2400dd84278e214
 }
 
 export const TopBar: React.FC<TopBarProps> = ({ conversationTitle, isLoading }) => {
   return (
     <div className="h-16 bg-white border-b border-gray-200 flex items-center px-6">
+<<<<<<< HEAD
 >>>>>>> 402cf6d6338a7494de78bf81d7428bf9e7f09611
+=======
+>>>>>>> 8083b3d4cfc2aa893afff703d2400dd84278e214
       <div className="flex items-center gap-3">
         <MessageSquare className="h-5 w-5 text-blue-600" />
         <h1 className="text-lg font-semibold text-gray-900">
@@ -41,6 +51,7 @@ export const TopBar: React.FC<TopBarProps> = ({ conversationTitle, isLoading }) 
           </div>
         )}
       </div>
+<<<<<<< HEAD
 <<<<<<< HEAD
       
       {canExport && onExportReport && (
@@ -56,6 +67,8 @@ export const TopBar: React.FC<TopBarProps> = ({ conversationTitle, isLoading }) 
       )}
 =======
 >>>>>>> 402cf6d6338a7494de78bf81d7428bf9e7f09611
+=======
+>>>>>>> 8083b3d4cfc2aa893afff703d2400dd84278e214
     </div>
   );
 };

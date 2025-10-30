@@ -9,9 +9,12 @@ import { TopBar } from "@/components/TopBar";
 import { Button } from "@/components/ui/button";
 import { QueryConfirmation } from "@/components/QueryConfirmation";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { ExportReport } from "@/components/ExportReport";
 =======
 >>>>>>> 402cf6d6338a7494de78bf81d7428bf9e7f09611
+=======
+>>>>>>> 8083b3d4cfc2aa893afff703d2400dd84278e214
 
 interface Conversation {
   id: string;
@@ -57,6 +60,7 @@ export default function App() {
   const [showQueryConfirmation, setShowQueryConfirmation] = useState(false);
   const [generatedQueries, setGeneratedQueries] = useState<string[]>([]);
 <<<<<<< HEAD
+<<<<<<< HEAD
   
   // 添加导出报告相关状态
   const [showExportReport, setShowExportReport] = useState(false);
@@ -64,6 +68,8 @@ export default function App() {
   const [currentReportTitle, setCurrentReportTitle] = useState("");
 =======
 >>>>>>> 402cf6d6338a7494de78bf81d7428bf9e7f09611
+=======
+>>>>>>> 8083b3d4cfc2aa893afff703d2400dd84278e214
 
   const scrollAreaRef = useRef<HTMLDivElement>(null);
   const hasFinalizeEventOccurredRef = useRef(false);
@@ -585,6 +591,7 @@ export default function App() {
   }, [thread, generatedQueries]);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   // 处理导出报告
   const handleExportReport = useCallback(() => {
     // 获取最新的AI消息作为报告内容
@@ -616,6 +623,8 @@ export default function App() {
 
 =======
 >>>>>>> 402cf6d6338a7494de78bf81d7428bf9e7f09611
+=======
+>>>>>>> 8083b3d4cfc2aa893afff703d2400dd84278e214
   return (
     <div className="flex h-screen bg-white text-gray-900 font-sans antialiased overflow-hidden">
       {/* 侧边栏 */}
@@ -636,10 +645,13 @@ export default function App() {
           conversationTitle={currentConversationId ? conversations.find(c => c.id === currentConversationId)?.title : undefined}
           isLoading={thread.isLoading}
 <<<<<<< HEAD
+<<<<<<< HEAD
           onExportReport={handleExportReport}
           canExport={thread.messages.some(msg => msg.type === "ai")}
 =======
 >>>>>>> 402cf6d6338a7494de78bf81d7428bf9e7f09611
+=======
+>>>>>>> 8083b3d4cfc2aa893afff703d2400dd84278e214
         />
         
         {/* 内容区域 */}
@@ -684,6 +696,7 @@ export default function App() {
         isVisible={showQueryConfirmation}
       />
 <<<<<<< HEAD
+<<<<<<< HEAD
       
       {/* 导出报告弹窗 */}
       <ExportReport
@@ -694,6 +707,8 @@ export default function App() {
       />
 =======
 >>>>>>> 402cf6d6338a7494de78bf81d7428bf9e7f09611
+=======
+>>>>>>> 8083b3d4cfc2aa893afff703d2400dd84278e214
     </div>
   );
 }
